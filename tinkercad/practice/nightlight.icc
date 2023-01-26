@@ -1,0 +1,26 @@
+// C++ code
+//
+
+// Pins
+const int light_pin = A0;
+const int led_pin = 6;
+
+// Darkness threshold
+const int threshold = 900;
+
+void setup()
+{
+  pinMode(led_pin, OUTPUT);
+}
+
+void loop()
+{
+  // read light value
+  int val = analogRead(light_pin);
+  
+  if (val < threshold) {
+  	digitalWrite(led_pin, HIGH);
+  } else {
+    digitalWrite(led_pin, LOW);
+  }
+}
