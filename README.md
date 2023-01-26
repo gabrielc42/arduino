@@ -3,3 +3,4 @@ includes:
   
 plans for future projects:
   - https://youtu.be/sI3LLa0uKlI
+  - source code for bionic prosthetics project
